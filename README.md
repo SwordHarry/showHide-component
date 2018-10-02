@@ -29,9 +29,9 @@ css3 &amp; jquery 显示隐藏 动画效果 插件
 $box = $(dom-element);
 // 插件的初始化方式
 $box.showHide({
-  css3: false,
-  js: false,
-  animation: "slideUpDown"           
+  css3: true,               // true则调用css3模式的动画（并且检测浏览器是否兼容），优先级比js高，fasle则不调用
+  js: false,                // true则调用jquery的动画，false则不调用
+  animation: "slideUpDown"  // 收起展开的动画的方式         
 });
 btnShow.on("click", function () {
   // 插件的展示调用
