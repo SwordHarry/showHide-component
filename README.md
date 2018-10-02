@@ -2,11 +2,11 @@
 css3 &amp; jquery 显示隐藏 动画效果 插件
 ### 兼容主流浏览器chrome和IE9+等，同时兼容IE6 7 8
 ### 目前支持: 
-      淡入淡出 (fade)
-      上滑动收起，下滑动展开(slideUpDown)
-      左滑动收起，右滑动展开(slideLeftRight)
-      淡出上滑动收起，淡入下滑动展开(fadeSlideUpDown)
-      淡出左滑动收起，淡入右滑动展开(fadeSlideLeftRight)
+淡入淡出 (fade)
+上滑动收起，下滑动展开(slideUpDown)
+左滑动收起，右滑动展开(slideLeftRight)
+淡出上滑动收起，淡入下滑动展开(fadeSlideUpDown)
+淡出左滑动收起，淡入右滑动展开(fadeSlideLeftRight)
 
 ## 使用前提
 导入transition.css （注意自定义样式不要和transition.css的样式名冲突）
