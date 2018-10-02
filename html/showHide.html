@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>showHide-component</title>
+    <link rel="stylesheet" href="../css/transition.css">
+    <style>
+        #box {
+            width: 200px;
+            /*分三种情况：
+            1.高度明确
+            2.没有高度只有padding
+            3.高度和padding都没有，靠内部元素撑开*/
+            height: 200px;
+            padding: 100px 0;
+            background: red;
+            display: none;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn-show" class="btn">display</button>
+    <button id="btn-hide" class="btn">hide</button>
+    <div id="box">
+        <p>123</p>
+        <p>123</p>
+        <p>123</p>
+        <p>123</p>
+        <p>123</p>
+    </div>
+    <button class="btn">button</button>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/transition.js"></script>
+    <script src="../js/showHide.js"></script>
+    <script>
+        // 查看你的浏览器是否支持css3动画和css3支持的字符串
+        console.log(window.mt.transition.end);
+        console.log(window.mt.transition.isSupport);
+
+        var btnShow = $("#btn-show");
+        var btnHide = $("#btn-hide");
+        var $box = $("#box")
+
+        // 插件的初始化方式
+        $box.showHide({
+            css3: false,
+            js: false,
+            animation: "slideUpDown"
+        });
+        btnShow.on("click", function () {
+            // 插件的展示调用
+            $box.showHide("show");
+
+        });
+        btnHide.on("click", function () {
+            // 插件的隐藏调用
+            $box.showHide("hide");
+        });
+        // 插件的显示前，显示后，隐藏前，隐藏后的回调函数
+        $box.on("show shown hide hidden", function (e) {
+            console.log(e.type);
+        });
+
+    </script>
+</body>
+</html>

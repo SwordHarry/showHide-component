@@ -1,0 +1,22 @@
+.transition{
+		-o-transition: all 0.5s;
+		-ms-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		transition: all 0.5s;
+}
+.fadeOut{
+	visibility: hidden !important;
+	opacity: 0 !important;
+}
+.slideUpDownCollapse{
+	/*类的优先级比ID优先级低，所以添加优先级*/
+	height: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+.slideLeftRightCollapse{
+	width: 0 !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
