@@ -26,6 +26,7 @@ css3 &amp; jquery 显示隐藏 动画效果 插件
  
  ## 使用方式
  ```
+$box = $(dom-element);
 // 插件的初始化方式
 $box.showHide({
   css3: false,
